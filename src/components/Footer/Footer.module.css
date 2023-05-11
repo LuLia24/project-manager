@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(133, 163, 223);
+  min-height: 60px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.text {
+  margin: 0;
+}

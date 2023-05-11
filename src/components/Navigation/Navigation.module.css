@@ -1,0 +1,24 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  margin: 0;
+}
+
+.link:hover {
+  filter: brightness(0) invert(1);
+  transition: filter 0.5s;
+}
+
+@media screen and (min-width: 600px) {
+  .navigation {
+    flex-direction: row;
+  }
+}
