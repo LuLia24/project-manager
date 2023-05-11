@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+
+  flex-grow: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.home__img {
+  display: block;
+  flex-grow: 1;
+  background-image: url(../../assets/icons/back-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

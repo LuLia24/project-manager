@@ -1,0 +1,70 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  /* background-color: rgba(133, 163, 223, 0.5); */
+  transform: translateX(-100%);
+}
+
+.overlay_active {
+  transform: none;
+}
+
+.sidebar {
+  position: relative;
+  height: 100%;
+  width: 370px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: rgba(133, 163, 223, 1);
+  transform: translateX(-100%);
+}
+
+.sidebar_active {
+  transition: transform 1s;
+  transform: none;
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: block;
+  background-image: url(../../assets/icons/close-icon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.closeIcon:hover {
+  filter: brightness(0) invert(1);
+  transition: filter 0.5s;
+}
+
+.decorationLine {
+  margin: 0px;
+  border-width: 0px 0px thin;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
+}
