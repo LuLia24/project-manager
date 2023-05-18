@@ -9,10 +9,10 @@ export const Navigation = ({ onClose }: NavigationProps) => {
   return (
     <nav className={cl.navigation}>
       <Link to="signin" className={cl.link} onClick={onClose}>
-        Логин
+        Авторизация
       </Link>
       <Link to="signup" className={cl.link} onClick={onClose}>
-        Авторизация
+        Регистрация
       </Link>
     </nav>
   );

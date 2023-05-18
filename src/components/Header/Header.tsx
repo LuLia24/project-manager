@@ -24,12 +24,16 @@ export const Header = () => {
     };
   }, []);
 
+  const isDesktop = windowWidth >= windowWidthBP;
+
   return (
     <header className={cl.header}>
-      <div className={cl.wrap}>
-        {windowWidth >= windowWidthBP ? <Logo /> : <Burger />}
-        {windowWidth >= windowWidthBP ? <Navigation /> : null}
-        <LangSelect />
+      <div className={cl.items}>
+        {isDesktop ? <Logo /> : <Burger />}
+        <div className={cl.wrap}>
+          {isDesktop && <Navigation />}
+          <LangSelect />
+        </div>
       </div>
     </header>
   );

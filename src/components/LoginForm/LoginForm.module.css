@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 25px;
+  width: 300px;
+  border: 1px solid rgb(133, 163, 223);
+  border-radius: 10px;
+}
+
+.title {
+  margin: 0;
+}
+
+.input_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.button_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
